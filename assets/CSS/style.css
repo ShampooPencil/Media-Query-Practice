@@ -1,0 +1,53 @@
+#TitleOnHome, #MiddleScreen, #BottomOfPage{
+    margin: 10rem;
+    font-size: 6rem;
+}
+
+/* #TitleOnHOme{
+    color: blue;
+}
+#MiddleScreen{
+    color: red;
+}
+#BottomOfPage{
+    color: purple;
+} */
+body{
+    color: red;
+    font-size: 20px;
+    margin: 5rem;
+}
+/* @media (max-width: 500px){
+    body{
+        color: red;
+        font-size: 20px;
+        margin: 5rem;
+    }
+    
+} */
+/*this is interesting, when screen is more horizontal and vertical, it will change
+     the color of the #TitleOnHome's color font    */
+@media (orientation: landscape) and (max-width: 500px) {
+    #TitleOnHome {
+        color: purple;
+    }
+}
+
+/* the same thing as above but now, even if its over 500px, is still color: green 
+because of landscape mode or vice versa.
+@media (orientation: landscape), (max-width: 500px) {
+    #TitleOnHome {
+        color: green;
+    }
+}
+*/
+
+/*same thing as above, but in vertical mode now and when under 500px, the color will change*/
+@media (orientation: portrait) and (max-width: 500px) {
+    #BottomOfPage {
+        color: cyan;
+    }
+}
+
+/*nice job! so get deeper in mobile response and get overall better at it! It is the future!
+
